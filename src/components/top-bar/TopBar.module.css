@@ -1,0 +1,42 @@
+.container
+{
+    display: flex;
+    align-items: center;
+    height: var(--agro-topbar-height);
+    background-color: var(--agro-color-primary);
+}
+
+
+.logo_column
+{
+    flex: 0.1;
+    margin-left: 0.5rem;
+}
+
+
+.title_column
+{
+    flex: 0.1;
+    margin-left: 1rem;
+}
+
+
+.children_column
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+    flex: 1;
+}
+
+
+.logo
+{
+}
+
+
+.title
+{
+
+}

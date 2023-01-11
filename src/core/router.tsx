@@ -17,7 +17,10 @@ export function getRouter(): any
 
         {
             path: RouterPaths.APP,
-            element: <App/>
+            element: <App/>,
+            children: [
+                
+            ]
         },
 
         {
