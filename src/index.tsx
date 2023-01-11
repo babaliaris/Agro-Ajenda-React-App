@@ -3,14 +3,22 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from 'react-router-dom';
 import { getRouter } from './core/router';
+import { i18nInit } from './core/i18n';
 
 
+//Import CSS files.
 import '../node_modules/normalize.css/normalize.css';
 import './index.css';
 
+//Initialize i18n.
+i18nInit();
+
+//Create the root element.
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+//Render the router starting from the root element.
 root.render(
   <React.StrictMode>
     <RouterProvider router={getRouter()}/>
