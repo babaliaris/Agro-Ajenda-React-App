@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*CSS Variables*/
+html, body, *
+{
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /*====================================Default Colors Palette====================================*/
+
+  /*These colors are used for the background color of primary containers, like the body,
+  toolbox, header and shoutbox*/
+  --agro-color-bg-body: rgb(210, 210, 210);
+  --agro-color-bg-toolbox: rgb(220, 220, 220);
+  --agro-color-bg-header: rgb(230, 230, 230);
+
+  /*This is used for containers rendered on top of the background colors(See above)
+    like lists, cards etc. 
+    It should be lighter than any background color.
+  */
+  --agro-color-bg-ontop: rgb(255, 255, 255);
+
+
+  /*The following two colors are used for highlighted text/containers, buttons, radio and toggle buttons when ON,
+    etc. The secondary is usefull when a highlighted element is on top of a primary colored one.*/
+  --agro-color-primary: rgb(94, 255, 0);
+  --agro-color-secondary: rgb(153, 0, 255);
+
+
+  /*Text Colors*/
+  --agro-color-text-primary: rgb(0, 0, 0); /*For light areas*/
+  --agro-color-text-secondary: rgb(255, 255, 255); /*For dark areas*/
+
+  /*The folloing colors are self explained.*/
+  --agro-color-danger: rgb(255, 0, 0);
+  --agro-color-warning: rgb(255, 238, 0);
+  --agro-color-info: rgb(0, 255, 200);
+
+  /*====================================Default Colors Palette====================================*/
+
+
+
+  /*BODY background color.*/
+  background-color: var(--agro-color-bg-body);
+
+  /*Text color*/
+  color: var(--agro-color-text-primary);
 }
