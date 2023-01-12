@@ -18,7 +18,7 @@ function DisplayList({data, getKey, getLogo, getText, onClick, onEdit, onDelete}
 
     const onItemClick = React.useCallback((event: React.MouseEvent<HTMLDivElement, MouseEvent>, item: any)=>
     {
-        event.stopPropagation();
+        event.stopPropagation()
         if (onClick) onClick(item);
 
     }, [onClick]);
@@ -26,7 +26,7 @@ function DisplayList({data, getKey, getLogo, getText, onClick, onEdit, onDelete}
 
     const onItemEdit = React.useCallback((event: React.MouseEvent<HTMLElement, MouseEvent>, item: any)=>
     {
-        event.stopPropagation();
+        event.stopPropagation()
         if (onEdit) onEdit(item);
 
     }, [onEdit]);
@@ -34,7 +34,7 @@ function DisplayList({data, getKey, getLogo, getText, onClick, onEdit, onDelete}
 
     const onItemDelete = React.useCallback((event: React.MouseEvent<HTMLElement, MouseEvent>, item: any, index: number)=>
     {
-        event.stopPropagation();
+        event.stopPropagation()
         if (onDelete) onDelete(item, index);
 
     }, [onDelete]);
