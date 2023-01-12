@@ -1,0 +1,8 @@
+.outlet_area
+{
+    display: block;
+    width: 100%;
+    height: calc( 100vh - var(--agro-topbar-height) - var(--agro-toolbar-height) );
+    overflow: auto;
+    background-color: var(--agro-color-bg-body);
+}

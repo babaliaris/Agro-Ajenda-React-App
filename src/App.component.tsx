@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './App.module.css'
 import * as Router from 'react-router-dom';
 import TopBar from './components/topbar/TopBar.component';
 import * as ReactI18n from 'react-i18next';
@@ -13,6 +14,7 @@ function App()
 
   return (
     <React.Fragment>
+
       <TopBar title={t(TranslationKeys.title)} logo={ICONS.logo}>
           <h1>h1</h1>
           <h2>h2</h2>
@@ -21,7 +23,10 @@ function App()
 
       <Toolbar/>
 
-      <Router.Outlet/>
+      <div className={styles.outlet_area}>
+        <Router.Outlet/>
+      </div>
+
     </React.Fragment>
   );
 }
