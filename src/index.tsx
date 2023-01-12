@@ -8,7 +8,9 @@ import { i18nInit } from './core/i18n';
 
 //Import CSS files.
 import '../node_modules/normalize.css/normalize.css';
+import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import './index.css';
+ 
 
 //Initialize i18n.
 i18nInit();

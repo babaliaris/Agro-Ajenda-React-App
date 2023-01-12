@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './TopBar.module.css';
-import { JsxElement } from "typescript";
 
 type TopBarProps = {
     title: string,
@@ -11,11 +10,12 @@ type TopBarProps = {
 
 function TopBar({title, logo, children}: TopBarProps)
 {
+
     return (
         <div className={styles.container}>
 
             <div className={styles.logo_column}>
-                <i className={`${styles.logo}`}>{logo}</i>
+                <i className={`${styles.logo} ${logo}`}/>
             </div>
 
             <div className={styles.title_column}>

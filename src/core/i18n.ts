@@ -21,3 +21,9 @@ export function i18nInit()
         }
     });
 }
+
+
+
+export const TranslationKeys = {
+    title: "title"
+};
