@@ -7,8 +7,7 @@ body
   /*These colors are used for the background color of primary containers, like the body,
   toolbox, header and shoutbox*/
   --agro-color-bg-body: rgb(210, 210, 210);
-  --agro-color-bg-toolbox: rgb(220, 220, 220);
-  --agro-color-bg-header: rgb(230, 230, 230);
+  --agro-color-bg-toolbar: rgb(205, 205, 205);
 
   /*This is used for containers rendered on top of the background colors(See above)
     like lists, cards etc. 
@@ -36,6 +35,7 @@ body
 
 
   --agro-topbar-height: 8rem;
+  --agro-toolbar-height: 2rem;
 
 
 

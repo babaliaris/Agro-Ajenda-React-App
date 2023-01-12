@@ -1,0 +1,28 @@
+.container
+{
+    display: flex;
+    align-items: center;
+    height: var(--agro-toolbar-height);
+    background-color: var(--agro-color-bg-toolbar);
+}
+
+
+.logo_column
+{
+    flex: 0.01
+}
+
+
+.items_column
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo
+{
+    font-size: 1.8rem;
+}

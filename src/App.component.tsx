@@ -1,9 +1,10 @@
 import React from 'react';
 import * as Router from 'react-router-dom';
-import TopBar from './components/top-bar/TopBar.component';
+import TopBar from './components/topbar/TopBar.component';
 import * as ReactI18n from 'react-i18next';
 import { TranslationKeys } from './core/i18n';
 import {ICONS} from './core/icons';
+import Toolbar from './components/toolbar/Toolbar.component';
 
 
 function App()
@@ -17,6 +18,8 @@ function App()
           <h2>h2</h2>
           <h3>h3</h3>
       </TopBar>
+
+      <Toolbar/>
 
       <Router.Outlet/>
     </React.Fragment>
