@@ -1,0 +1,99 @@
+.container
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.list_item
+{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    background-color: var(--agro-color-bg-ontop);
+    transition: padding 1s;
+}
+
+
+.list_item:hover
+{
+    cursor: pointer;
+    color: var(--agro-color-primary);
+    padding-left: 2rem;
+    padding-right:2rem;
+
+}
+
+
+.logo_column
+{
+    flex: 0.1;
+}
+
+
+.text_column
+{
+    flex: 1;
+    text-align: center;
+}
+
+
+.edit_column
+{
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.delete_column
+{
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.logo
+{
+    font-size: 4rem ;
+}
+
+
+.text
+{
+    cursor: pointer;
+}
+
+
+.edit
+{
+    font-size: 1.2rem;
+}
+
+
+.edit:hover
+{
+    cursor: pointer;
+    color: var(--agro-color-info);
+}
+
+
+.delete
+{
+    text-align: center;
+}
+
+
+.delete:hover
+{
+    cursor: pointer;
+    color: var(--agro-color-danger);
+}
