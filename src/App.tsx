@@ -5,7 +5,7 @@ import TopBar from './components/topbar/TopBar';
 import * as ReactI18n from 'react-i18next';
 import { TranslationKeys } from './core/i18n';
 import {ICONS} from './core/icons';
-import Toolbar from './components/toolbar/Toolbar';
+import Toolbar from './components/toolbars/Toolbar';
 
 
 function App()
