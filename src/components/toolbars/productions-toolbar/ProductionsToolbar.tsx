@@ -1,20 +1,26 @@
 import React from "react";
 import { ToolbarBtnI } from "../toolbar-btn.interface";
 import { ICONS } from "../../../core/icons";
-import { Logger } from "../../../core/logger";
 import ToolbarBtn from "../../ui/toolbar-button/ToolbarBtn";
+import CenteredModal from "../../centered-modal/CenteredModal";
 
 
 
 function ProductionsToolbar()
 {
     const [items, setItems] = React.useState<ToolbarBtnI[]>([]);
+    const [show_create_modal, setShowCreateModal] = React.useState(false);
 
 
     const onAddButtonClicked = React.useCallback(()=>
     {
-        Logger.info(ICONS.add);
+        setShowCreateModal(true);
+    }, []);
 
+
+    const onCreateModalClose = React.useCallback(()=>
+    {
+        setShowCreateModal(false);
     }, []);
 
 
@@ -42,6 +48,14 @@ function ProductionsToolbar()
                     );
                 })
             }
+
+        { show_create_modal &&
+            <CenteredModal
+            onClose={onCreateModalClose}
+            >
+                Modal Works!
+            </CenteredModal>
+        }
 
         </div>
     );
