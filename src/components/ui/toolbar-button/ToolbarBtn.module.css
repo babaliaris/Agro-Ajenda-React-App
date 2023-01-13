@@ -1,0 +1,17 @@
+.container
+{
+    border-style: none;
+    border-radius: 1rem;
+    color: var(--agro-color-primary);
+    font-size: 1.6rem;
+    background-color: var(--agro-color-bg-toolbar);
+    transition: font-size 0.4s;
+}
+
+
+.container:hover
+{
+    cursor: pointer;
+    color: var(--agro-color-secondary);
+    font-size: 1.4rem;
+}

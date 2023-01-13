@@ -1,6 +1,8 @@
 import React from "react";
 import styles from './Toolbar.module.css';
+import { Logger } from "../../core/logger";
 import {ICONS} from '../../core/icons';
+import ToolbarBtn from "../ui/toolbar-button/ToolbarBtn";
 
 function Toolbar()
 {
@@ -12,10 +14,11 @@ function Toolbar()
             </div>
 
             <div className={styles.items_column}>
-                <i className="fa-solid fa-up-down-left-right"></i>
-                <i className="fa-solid fa-play"></i>
-                <i className="fa-solid fa-forward-fast"></i>
-                <i className="fa-solid fa-right-from-bracket"></i>
+                <ToolbarBtn
+                onClick={()=>Logger.info("Testing Toolbar Button onClick")}
+                >
+                    <i className={ICONS.add}/>
+                </ToolbarBtn>
             </div>
 
         </div>
