@@ -8,6 +8,7 @@ body
   toolbox, header and shoutbox*/
   --agro-color-bg-body: rgb(240, 240, 240);
   --agro-color-bg-toolbar: rgb(0, 110, 255);
+  --agro-color-bg-modal: rgba(0, 0, 0, 0.5);
 
   /*This is used for containers rendered on top of the background colors(See above)
     like lists, cards etc. 

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './ProductionsToolbar.module.css';
 import { ToolbarBtnI } from "../toolbar-btn.interface";
 import { ICONS } from "../../../core/icons";
 import ToolbarBtn from "../../ui/toolbar-button/ToolbarBtn";
@@ -53,7 +54,21 @@ function ProductionsToolbar()
             <CenteredModal
             onClose={onCreateModalClose}
             >
-                Modal Works!
+                <div className={styles.create_modal_container}>
+
+                    <div className={styles.create_modal_title}>
+                        <label>Create Production</label>
+                    </div>
+
+                    <div className={styles.create_modal_body}>
+                        <input type="text" placeholder="Input"/>
+                        <input type="text" placeholder="Input"/>
+                        <input type="text" placeholder="Input"/>
+                        <input type="text" placeholder="Input"/>
+                    </div>
+
+                </div>
+
             </CenteredModal>
         }
 
