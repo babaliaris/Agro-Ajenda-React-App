@@ -10,7 +10,7 @@ type DisplayListProps = {
     getText: (item: any)=>string,
     onClick?: (item: any)=>void
     onEdit?: (item: any)=>void
-    onDelete?: (item: any, index?: number)=>void
+    onDelete?: (item: any, index: number)=>void
 };
 
 function DisplayList({data, getKey, getLogo, getText, onClick, onEdit, onDelete}: DisplayListProps)
