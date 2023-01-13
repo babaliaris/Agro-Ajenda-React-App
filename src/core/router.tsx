@@ -1,8 +1,8 @@
 
 import { createBrowserRouter, redirect } from "react-router-dom";
 
-import App from "../App.component";
-import Productions from '../components/productions/Productions.component';
+import App from "../App";
+import Productions from '../components/productions/Productions';
 
 
 
