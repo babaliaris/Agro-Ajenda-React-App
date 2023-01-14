@@ -20,7 +20,7 @@ body
   /*The following two colors are used for highlighted text/containers, buttons, radio and toggle buttons when ON,
     etc. The secondary is usefull when a highlighted element is on top of a primary colored one.*/
   --agro-color-primary: rgb(94, 255, 0);
-  --agro-color-secondary: rgb(0, 255, 179);
+  --agro-color-secondary: rgb(0, 201, 140);
 
 
   /*Text Colors*/

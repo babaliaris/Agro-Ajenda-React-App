@@ -1,16 +1,28 @@
 import React from 'react';
+import styles from './Button.module.css';
 
 type ButtonProps = {
   children: React.ReactNode,
-  styles?: React.DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, 
-HTMLButtonElement>
+  onClick: ()=>void,
+  style?: React.CSSProperties
 
 };
 
-function Button({children, styles}:ButtonProps)
+function Button({children, onClick, style}:ButtonProps)
 {
+
+  const onBtnClick = React.useCallback((event: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>
+  {
+    event.stopPropagation();
+    onClick();
+  }, [onClick]);
+
   return (
-    <button styles={styles}>
+    <button
+    className={styles.container}
+    style={style}
+    onClick={(event)=>onBtnClick(event)}
+    >
       {children}
     </button>
   );
