@@ -1,0 +1,40 @@
+.container
+{
+    display: block;
+}
+
+.flexbox
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo
+{
+    font-size: 1.8rem;
+    margin-right: 0.2rem;
+}
+
+
+.input
+{
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border-width: 0.1rem;
+
+}
+
+.input:focus
+{
+    outline: 0;
+    border-color: var(--agro-color-primary);
+}
+
+
+.error
+{
+    color: var(--agro-color-danger);
+    margin-left: 2rem;
+    font-size: 0.8rem;
+}
