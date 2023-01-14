@@ -19,6 +19,7 @@
 
 .input
 {
+    flex: 1;
     padding: 0.6rem;
     border-radius: 0.4rem;
     border-width: 0.1rem;

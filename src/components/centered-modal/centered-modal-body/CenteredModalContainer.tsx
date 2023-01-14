@@ -3,10 +3,11 @@ import styles from './CenteredModalContainer.module.css';
 
 type CenteredModalBodyProps = {
     children: React.ReactNode,
-    onClose: ()=>void
+    onClose: ()=>void,
+    style?: React.CSSProperties
 };
 
-function CenteredModalBody({children, onClose}:CenteredModalBodyProps)
+function CenteredModalBody({children, onClose, style}:CenteredModalBodyProps)
 {
     const onModalContainerClick = React.useCallback((event: React.MouseEvent<HTMLDivElement, MouseEvent>)=>
     {
@@ -22,6 +23,7 @@ function CenteredModalBody({children, onClose}:CenteredModalBodyProps)
         >
 
             <div
+            style={style}
             className={styles.modal_body}
             onClick={(event)=>event.stopPropagation()}
             >

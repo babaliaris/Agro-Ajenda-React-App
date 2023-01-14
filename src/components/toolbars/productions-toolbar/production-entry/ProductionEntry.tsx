@@ -23,6 +23,7 @@ function ProductionEntry({onClose, onCreate}:ProductionEntryProps)
 
     return (
         <CenteredModal
+        style={{width: "90%"}}
         onClose={onClose}
         >
             <div className={styles.create_modal_container}>
